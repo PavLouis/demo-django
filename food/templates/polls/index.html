@@ -1,0 +1,10 @@
+{% if food_list %}
+    <h3>Voici !</h3>
+    <ul>
+    {% for food in food_list %}
+        <li>{{ food.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No food were created.</p>
+{% endif %}
